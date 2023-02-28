@@ -14,7 +14,7 @@ class player:
         self.status_effect = []
         self.location = ''
 
-new_player = player():
+new_player = player()
 
 ### Title Screen ###
 def title_menu_select():
@@ -71,6 +71,7 @@ MAP
 
 """
 
+ZONENAME = ''
 DESCRIPTION = 'description'
 EXAMNIATION = 'examine'
 SOLVED = False
@@ -79,5 +80,252 @@ DOWN = 'down', 'south'
 LEFT = 'left', 'west'
 RIGHT = 'right', 'east'
 
-solved_places = {'a1': False, 'b1': False}
+solved_places = {'a1': False, 'b1': False, 'c1': False, 'd1': False, 'e1': False,
+                'a2': False, 'b2': False, 'c2': False, 'd2': False, 'e2': False,
+                'a3': False, 'b3': False, 'c3': False, 'd3': False, 'e3': False,
+                'a4': False, 'b4': False, 'c4':False, 'd4': False, 'e4': False,
+                'a5': False, 'b5': False, 'c5': False, 'd5': False, 'e5': False}
 
+zonemap = {
+    'a1': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'b1': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'c1': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'd1': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'e1': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'a2': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'b2': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'c2': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'd2': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'e2': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'a3': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'b3': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'c3': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'd3': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'e3': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'a4': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'b4': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'c4': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'd4': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'e4': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'a5': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'b5': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'c5': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+    'd5': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    }
+
+}
