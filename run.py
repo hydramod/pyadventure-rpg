@@ -92,130 +92,130 @@ zonemap = {
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = ''
+        DOWN = 'a2'
+        LEFT = ''
+        RIGHT = 'b1'
     },
     'b1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = ''
+        DOWN = 'b2'
+        LEFT = 'a1'
+        RIGHT = 'c1'
     },
     'c1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = ''
+        DOWN = 'c2'
+        LEFT = 'b1'
+        RIGHT = 'd1'
     },
     'd1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = ''
+        DOWN = 'd2'
+        LEFT = 'c1'
+        RIGHT = 'e1'
     },
     'e1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = ''
+        DOWN = 'e2'
+        LEFT = 'd1'
+        RIGHT = ''
     },
     'a2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'a1'
+        DOWN = 'a3'
+        LEFT = ''
+        RIGHT = 'b2'
     },
     'b2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'b1'
+        DOWN = 'b3'
+        LEFT = 'a2'
+        RIGHT = 'c2'
     },
     'c2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'c1'
+        DOWN = 'c3'
+        LEFT = 'b2'
+        RIGHT = 'd2'
     },
     'd2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'd1'
+        DOWN = 'd3'
+        LEFT = 'c2'
+        RIGHT = 'e2'
     },
     'e2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'e1'
+        DOWN = 'e3'
+        LEFT = 'd2'
+        RIGHT = ''
     },
     'a3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'a2'
+        DOWN = 'a4'
+        LEFT = ''
+        RIGHT = 'b3'
     },
     'b3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
-        UP = 'up', 'north'
+        UP = 'b2'
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
     },
     'c3': {
         ZONENAME = 'Home'
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
+        DESCRIPTION = 'A modest thatched-roof cottage with wooden beams and a dirt floor, situated in a rural village.'
+        EXAMNIATION = 'A central hearth for cooking and warmth, with sparse furnishings such as a rough-hewn table and stools, and a straw mattress in the corner.'
         SOLVED = False
-        UP = 'up', 'north'
-        DOWN = 'down', 'south'
-        LEFT = 'left', 'west'
-        RIGHT = 'right', 'east'
+        UP = 'c2',
+        DOWN = 'c4',
+        LEFT = 'b3',
+        RIGHT = 'd3',
     },
     'd3': {
         ZONENAME = ''
