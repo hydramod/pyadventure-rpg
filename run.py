@@ -12,7 +12,7 @@ class player:
         self.health = 0
         self.mana = 0
         self.status_effect = []
-        self.location = ''
+        self.location = 'home'
 
 new_player = player()
 
@@ -96,7 +96,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'b1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -106,7 +106,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'c1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -116,7 +116,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'd1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -126,7 +126,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'e1': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -136,7 +136,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'a2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -146,7 +146,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'b2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -156,7 +156,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'c2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -166,7 +166,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'd2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -176,7 +176,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'e2': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -186,7 +186,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'a3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -196,7 +196,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'b3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -206,9 +206,9 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'c3': {
-        ZONENAME = ''
+        ZONENAME = 'Home'
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
         SOLVED = False
@@ -216,7 +216,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'd3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -226,7 +226,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'e3': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -236,7 +236,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'a4': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -246,7 +246,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'b4': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -256,7 +256,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'c4': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -266,7 +266,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'd4': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -276,7 +276,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'e4': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -286,7 +286,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'a5': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -296,7 +296,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'b5': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -306,7 +306,7 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'c5': {
         ZONENAME = ''
         DESCRIPTION = 'description'
@@ -316,8 +316,18 @@ zonemap = {
         DOWN = 'down', 'south'
         LEFT = 'left', 'west'
         RIGHT = 'right', 'east'
-    }
+    },
     'd5': {
+        ZONENAME = ''
+        DESCRIPTION = 'description'
+        EXAMNIATION = 'examine'
+        SOLVED = False
+        UP = 'up', 'north'
+        DOWN = 'down', 'south'
+        LEFT = 'left', 'west'
+        RIGHT = 'right', 'east'
+    },
+    'e5': {
         ZONENAME = ''
         DESCRIPTION = 'description'
         EXAMNIATION = 'examine'
