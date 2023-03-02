@@ -14,7 +14,7 @@ class player:
         self.status_effect = []
         self.location = 'home'
 
-new_player = player()
+my_player = player()
 
 ### Title Screen ###
 def title_menu_select():
@@ -52,8 +52,6 @@ def help_menu_select():
     print("{:^43}".format("<-      Have fun and good luck       ->"))
     title_menu_select()
 
-def start_game():
-
 """
 MAP
      a   b   c   d   e
@@ -88,254 +86,311 @@ solved_places = {'a1': False, 'b1': False, 'c1': False, 'd1': False, 'e1': False
 
 zonemap = {
     'a1': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = ''
-        DOWN = 'a2'
-        LEFT = ''
-        RIGHT = 'b1'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = '',
+        DOWN = 'a2',
+        LEFT = '',
+        RIGHT = 'b1',
     },
     'b1': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = ''
-        DOWN = 'b2'
-        LEFT = 'a1'
-        RIGHT = 'c1'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = '',
+        DOWN = 'b2',
+        LEFT = 'a1',
+        RIGHT = 'c1',
     },
     'c1': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = ''
-        DOWN = 'c2'
-        LEFT = 'b1'
-        RIGHT = 'd1'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = '',
+        DOWN = 'c2',
+        LEFT = 'b1',
+        RIGHT = 'd1',
     },
     'd1': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = ''
-        DOWN = 'd2'
-        LEFT = 'c1'
-        RIGHT = 'e1'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = '',
+        DOWN = 'd2',
+        LEFT = 'c1',
+        RIGHT = 'e1',
     },
     'e1': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = ''
-        DOWN = 'e2'
-        LEFT = 'd1'
-        RIGHT = ''
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = '',
+        DOWN = 'e2',
+        LEFT = 'd1',
+        RIGHT = '',
     },
     'a2': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'a1'
-        DOWN = 'a3'
-        LEFT = ''
-        RIGHT = 'b2'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'a1',
+        DOWN = 'a3',
+        LEFT = '',
+        RIGHT = 'b2',
     },
     'b2': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'b1'
-        DOWN = 'b3'
-        LEFT = 'a2'
-        RIGHT = 'c2'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'b1',
+        DOWN = 'b3',
+        LEFT = 'a2',
+        RIGHT = 'c2',
     },
     'c2': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'c1'
-        DOWN = 'c3'
-        LEFT = 'b2'
-        RIGHT = 'd2'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'c1',
+        DOWN = 'c3',
+        LEFT = 'b2',
+        RIGHT = 'd2',
     },
     'd2': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'd1'
-        DOWN = 'd3'
-        LEFT = 'c2'
-        RIGHT = 'e2'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'd1',
+        DOWN = 'd3',
+        LEFT = 'c2',
+        RIGHT = 'e2',
     },
     'e2': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'e1'
-        DOWN = 'e3'
-        LEFT = 'd2'
-        RIGHT = ''
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'e1',
+        DOWN = 'e3',
+        LEFT = 'd2',
+        RIGHT = '',
     },
     'a3': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'a2'
-        DOWN = 'a4'
-        LEFT = ''
-        RIGHT = 'b3'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'a2',
+        DOWN = 'a4',
+        LEFT = '',
+        RIGHT = 'b3',
     },
     'b3': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'b2'
-        DOWN = 'b4'
-        LEFT = 'a3'
-        RIGHT = 'c3'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'b2',
+        DOWN = 'b4',
+        LEFT = 'a3',
+        RIGHT = 'c3',
     },
     'c3': {
-        ZONENAME = 'Home'
-        DESCRIPTION = 'A modest thatched-roof cottage with wooden beams and a dirt floor, situated in a rural village.'
-        EXAMNIATION = 'A central hearth for cooking and warmth, with sparse furnishings such as a rough-hewn table and stools, and a straw mattress in the corner.'
-        SOLVED = False
+        ZONENAME = 'Home',
+        DESCRIPTION = 'A modest thatched-roof cottage with wooden beams and a dirt floor, situated in a rural village.',
+        EXAMNIATION = 'A central hearth for cooking and warmth, with sparse furnishings such as a rough-hewn table and stools, and a straw mattress in the corner.',
+        SOLVED = False,
         UP = 'c2',
         DOWN = 'c4',
         LEFT = 'b3',
         RIGHT = 'd3'
     },
     'd3': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'd2'
-        DOWN = 'd4'
-        LEFT = 'c3'
-        RIGHT = 'e3'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'd2',
+        DOWN = 'd4',
+        LEFT = 'c3',
+        RIGHT = 'e3',
     },
     'e3': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'e2'
-        DOWN = 'e4'
-        LEFT = 'd3'
-        RIGHT = ''
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'e2',
+        DOWN = 'e4',
+        LEFT = 'd3',
+        RIGHT = '',
     },
     'a4': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'a3'
-        DOWN = 'a5'
-        LEFT = ''
-        RIGHT = 'b4'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'a3',
+        DOWN = 'a5',
+        LEFT = '',
+        RIGHT = 'b4',
     },
     'b4': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'b3'
-        DOWN = 'b5'
-        LEFT = 'a4'
-        RIGHT = 'c4'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'b3',
+        DOWN = 'b5',
+        LEFT = 'a4',
+        RIGHT = 'c4',
     },
     'c4': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'c3'
-        DOWN = 'c5'
-        LEFT = 'b4'
-        RIGHT = 'd4'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'c3',
+        DOWN = 'c5',
+        LEFT = 'b4',
+        RIGHT = 'd4',
     },
     'd4': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'd3'
-        DOWN = 'd5'
-        LEFT = 'c4'
-        RIGHT = 'e4'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'd3',
+        DOWN = 'd5',
+        LEFT = 'c4',
+        RIGHT = 'e4',
     },
     'e4': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'e3'
-        DOWN = 'e5'
-        LEFT = 'd4'
-        RIGHT = ''
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'e3',
+        DOWN = 'e5',
+        LEFT = 'd4',
+        RIGHT = '',
     },
     'a5': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'a4'
-        DOWN = ''
-        LEFT = ''
-        RIGHT = 'b5'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'a4',
+        DOWN = '',
+        LEFT = '',
+        RIGHT = 'b5',
     },
     'b5': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'b4'
-        DOWN = ''
-        LEFT = 'a5'
-        RIGHT = 'c5'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'b4',
+        DOWN = '',
+        LEFT = 'a5',
+        RIGHT = 'c5',
     },
     'c5': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'c4'
-        DOWN = ''
-        LEFT = 'b5'
-        RIGHT = 'd5'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'c4',
+        DOWN = '',
+        LEFT = 'b5',
+        RIGHT = 'd5',
     },
     'd5': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'd4'
-        DOWN = ''
-        LEFT = 'c5'
-        RIGHT = 'e5'
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'd4',
+        DOWN = '',
+        LEFT = 'c5',
+        RIGHT = 'e5',
     },
     'e5': {
-        ZONENAME = ''
-        DESCRIPTION = 'description'
-        EXAMNIATION = 'examine'
-        SOLVED = False
-        UP = 'e4'
-        DOWN = ''
-        LEFT = 'd5'
-        RIGHT = ''
+        ZONENAME = '',
+        DESCRIPTION = 'description',
+        EXAMNIATION = 'examine',
+        SOLVED = False,
+        UP = 'e4',
+        DOWN = '',
+        LEFT = 'd5',
+        RIGHT = '',
     }
 
 }
+
+def location():
+"""
+Display current location
+"""
+    print("*#" * 21)
+    print("*#{:^39}*#".format(my_player.location.upper()))
+    print("*#{:^39}*#".format(zonemap[my_player.location][DESCRIPTION]))
+    print("*#" * 21)
+
+def user_input():
+    print("*#" * 21)
+    print("*#{:^39}*#".format("What would you like to do?"))
+    print("*#" * 21)
+    while True:
+        action = input("> ").lower()
+        acceptable_actions = {'move', 'go', 'travel', 'walk', 'quit', 'examine', 'inspect', 'interact', 'look'}
+        if action in acceptable_actions:
+            break
+        print("Invalid action, try again.\n")
+    if action == 'quit':
+        sys.exit()
+    elif action in {'move', 'go', 'travel', 'walk'}:
+        player_move(action)
+    else:
+        player.examine(action)
+
+def player_move(action):
+    ask_user = "Where do you want to move to?\n"
+    user_dest = input(ask_user)
+    print("*#" * 21)
+    print("*#{:^39}*#".format(ask_user))
+    print("*#{:^39}*#".format(user_dest))
+    print("*#" * 21)
+    if user_dest in ['up', 'north']:
+        destination = zonemap[my_player.location][UP]
+        movement_handler(destination)
+    elif user_dest in ['down', 'south']:
+        destination = zonemap[my_player.location][DOWN]
+        movement_handler(destination)
+    elif user_dest in ['left', 'west']:
+        destination = zonemap[my_player.location][LEFT]
+        movement_handler(destination)
+    elif user_dest in ['right', 'east']:
+        destination = zonemap[my_player.location][RIGHT]
+        movement_handler(destination)
+
+def movement_handler(destination):
+    print("*#" * 21)
+    print("*#{:^39}*#".format("You have moved to the " + destination + "."))
+    print("*#" * 21)
+    my_player.location = destination
+    location()
+
+def player_examine():
+
+def start_game():
